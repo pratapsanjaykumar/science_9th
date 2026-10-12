@@ -369,6 +369,13 @@
     background-color: #1e40af;
     transform: translateY(-2px);
   }
+    /* Copy & Selection Protection */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Standard */
+  }
 </style>
 </head>
 <body>
@@ -815,6 +822,42 @@
 
   </div>
 </div>
+<script>
+  // 1. Disable Right-Click
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("Right-click is disabled on these handwritten notes!");
+  });
 
+  // 2. Disable Keyboard Shortcuts (Ctrl+U, Ctrl+Shift+I, F12, Ctrl+C, Ctrl+S)
+  document.addEventListener('keydown', function(e) {
+    // F12 key
+    if (e.key === 'F12') {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl + U (View Source)
+    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+      e.preventDefault();
+      alert("View Source (Ctrl+U) is disabled!");
+      return false;
+    }
+    // Ctrl + Shift + I or J or C (Developer Tools)
+    if (e.ctrlKey && e.shiftKey && ['i', 'j', 'c'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl + S (Save Page)
+    if (e.ctrlKey && e.key.toLowerCase() === 's') {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl + C (Copy)
+    if (e.ctrlKey && e.key.toLowerCase() === 'c') {
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 </body>
 </html>
