@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Class 9 Science Hub | Curated by Pratap Sanjay Sir</title>
+    <title>Class 9 Science Exploration | Curated by Pratap Sanjay Sir</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -134,20 +134,6 @@
             background: #0284c7;
         }
 
-        /* Glowing Quick Link Pills */
-        .quick-slug-btn {
-            background: rgba(30, 41, 59, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            transition: all 0.2s ease;
-        }
-        .quick-slug-btn:hover {
-            background: linear-gradient(135deg, #0284c7, #2563eb);
-            border-color: #38bdf8;
-            color: #ffffff;
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
-            transform: translateY(-2px);
-        }
-
         /* Pulse Badge Animation */
         @keyframes pulseDot {
             0%, 100% { opacity: 1; transform: scale(1); }
@@ -160,51 +146,94 @@
 </head>
 <body class="selection:bg-cyan-500 selection:text-slate-950 flex flex-col justify-between relative">
 
-    <!-- Live Animated Background Canvas -->
     <canvas id="liveBgCanvas"></canvas>
     <div class="ambient-glow-1"></div>
     <div class="ambient-glow-2"></div>
 
     <div class="relative z-10 flex-1 flex flex-col">
 
-        <div class="max-w-6xl mx-auto px-3 sm:px-6 pt-3 sm:pt-6 w-full">
-            <div class="overflow-hidden rounded-2xl sm:rounded-3xl border border-white/10 shadow-2xl bg-slate-900/60 backdrop-blur-md group">
-                <a href="https://pratapsanjaykumar.github.io/science_9th" target="_blank" rel="noopener noreferrer" class="block relative overflow-hidden">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPRTQdiWrih9O1LS4-oSBM-qgn4vo7EMzwFLigUoyuN6qV6lP3ApXU9mCZqKOZZT7O7c83a3Nj3kVCsgTI7ood_4-Ha6UKP4xz9Hg0zPANp9hZRbn3c3FBJum_LTsPHEhkKMmn8mbS39U3d_XZf8TI9lMZ7J6FRq5Yxeh7jJp1HphFZ5iQGDp1dxmVJbLc/s1600/science-9th.png" 
-                         alt="Science 9th NCERT Handwritten Notes By Pratap Sanjay Sir" 
-                         loading="lazy"
-                         class="w-full h-auto object-cover block group-hover:scale-[1.01] transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <span class="text-xs font-bold text-cyan-300 flex items-center gap-1.5 bg-slate-950/80 px-3 py-1.5 rounded-full border border-cyan-500/40">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Pratap Sanjay Sir's Master Hub
+        <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 text-white flex items-center justify-center shadow-lg shadow-cyan-500/25">
+                        <i class="fa-solid fa-atom text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-500/30">
+                            NCERT 2026-27 • Science
+                        </span>
+                        <h1 class="text-base sm:text-lg font-bold text-white leading-tight">
+                            Class 9 Science Exploration <span class="hidden sm:inline font-normal text-xs text-slate-400">| Pratap Sanjay Sir</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="window.print()" class="px-3 py-2 rounded-xl text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 border border-white/10 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-print"></i> Print Exploration
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 flex-1 w-full space-y-6">
+
+            <section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-cyan-950 via-slate-900 to-slate-950 text-white p-6 sm:p-10 shadow-2xl border border-cyan-500/20">
+                <div class="relative z-10 max-w-3xl space-y-4">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 shadow-sm">
+                            <i class="fa-solid fa-chalkboard-user"></i> By Pratap Sanjay Sir
+                        </span>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-white/10 backdrop-blur-md text-cyan-200">
+                            <i class="fa-solid fa-book-open"></i> Complete NCERT Course
+                        </span>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                            <i class="fa-solid fa-circle-check"></i> 13 Chapters Active
                         </span>
                     </div>
-                </a>
-            </div>
-        </div>
 
-        <main class="max-w-6xl mx-auto px-3 sm:px-6 py-5 sm:py-8 flex-1 w-full space-y-6">
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+                        Class 9 Science <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300">Exploration</span>
+                    </h2>
+                    
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Exploration Portal: Direct class study notes links, exercise solutions, official NCERT chapter PDFs, and instant revision tracker.
+                    </p>
 
-            <!-- MAIN CHAPTER DIRECTORY BOX (With Interactive Controls & Dynamic Links) -->
+                    <!-- Dynamic Progress Stats Bar -->
+                    <div class="pt-2 bg-slate-900/60 rounded-2xl p-4 border border-cyan-500/20 backdrop-blur-sm">
+                        <div class="flex items-center justify-between text-xs sm:text-sm font-semibold mb-2">
+                            <span class="flex items-center gap-2 text-cyan-300">
+                                <i class="fa-solid fa-list-check"></i> Syllabus Completion Status
+                            </span>
+                            <span id="progressPercent" class="text-amber-400 font-bold">0% Completed (0/13 Chapters)</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                            <div id="statProgressBar" class="bg-gradient-to-r from-cyan-500 to-blue-500 h-full w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Background Decorative Vector -->
+                <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none text-cyan-200">
+                    <i class="fa-solid fa-atom text-[300px]"></i>
+                </div>
+            </section>
+
             <section id="chapters-index-box" class="glass-panel rounded-2xl sm:rounded-3xl p-4 sm:p-7 md:p-8 border border-white/10 shadow-2xl relative">
                 
-                <!-- Live Header with Interactive Counter -->
                 <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 pb-5 sm:pb-6 border-b border-slate-700/60">
                     <div>
                         <div class="flex items-center gap-2 mb-2 flex-wrap">
                             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 text-[11px] font-extrabold uppercase tracking-wider">
-                                <span class="w-2 h-2 rounded-full bg-cyan-400 pulse-live"></span> CBSE Board 2026-27 Special
-                            </span>
-                            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 text-[11px] font-bold">
-                                <i class="fa-solid fa-laptop-code text-xs"></i> Interactive Hub
+                                <span class="w-2 h-2 rounded-full bg-cyan-400 pulse-live"></span> CBSE Board 2026-27 Curriculum
                             </span>
                         </div>
 
-                        <h1 class="text-2xl sm:text-3xl md:text-4xl font-black font-heading text-white tracking-tight leading-snug">
-                            Total Chapters of Science <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300">(13 Chapters Index)</span>
-                        </h1>
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl font-black font-heading text-white tracking-tight leading-snug">
+                            Science Exploration <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300">(13 Chapters)</span>
+                        </h3>
                         <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
-                            Complete digital curriculum classified by <strong>Physics [PHY]</strong>, <strong>Chemistry [CHE]</strong>, <strong>Biology [BIO]</strong>, and <strong>Earth Systems [ENV]</strong>. Every chapter provides dedicated direct page links (<code class="text-cyan-300 font-mono text-[11px] bg-slate-900/80 px-1.5 py-0.5 rounded">chapter_1</code> to <code class="text-cyan-300 font-mono text-[11px] bg-slate-900/80 px-1.5 py-0.5 rounded">chapter_13</code>) & NCERT documents. <span class="text-[11px] text-slate-400">(विषयवार वर्गीकरण एवं अभ्यास)</span>
+                            Explore Physics, Chemistry, Biology, and Earth Sciences with structured study notes, exercises, and official NCERT server PDFs.
                         </p>
                     </div>
 
@@ -225,26 +254,8 @@
                     </div>
                 </div>
 
-                <div class="mt-5 p-3.5 sm:p-4 rounded-2xl bg-slate-950/70 border border-white/10 shadow-inner">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-                        <div class="flex items-center gap-2">
-                            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-                            <span class="text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
-                                <i class="fa-solid fa-terminal text-cyan-400"></i> Direct Chapter Link Navigator
-                            </span>
-                        </div>
-                        <span class="text-[11px] text-slate-400 font-mono">Click to launch dedicated page link</span>
-                    </div>
-
-                    <!-- Direct Chapter Slugs Grid (chapter_1 to chapter_13) -->
-                    <div class="flex items-center gap-2 overflow-x-auto custom-scroll pb-2 pt-1 touch-pan-x" id="chapterSlugSandbox">
-                        <!-- Dynamically injected via JavaScript for 13 chapters -->
-                    </div>
-                </div>
-
                 <!-- Controls Bar: Subject Tabs + Dynamic Search -->
                 <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 py-5">
-                    <!-- Filter Tabs -->
                     <div class="flex items-center gap-2 overflow-x-auto custom-scroll pb-1 md:pb-0 touch-pan-x" id="subjectFilterTabs">
                         <button onclick="filterBySubject('all')" class="subject-filter-btn active flex-shrink-0 px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/25 transition transform active:scale-95" data-subj="all">
                             All (13 Chapters)
@@ -286,14 +297,12 @@
                     </div>
                 </div>
 
-                <!-- Chapter Cards List Container -->
                 <div id="chaptersListContainer" class="space-y-3.5"></div>
 
                 <!-- Empty State -->
                 <div id="noMatch" class="hidden text-center py-14 glass-panel rounded-2xl border border-white/10 mt-3">
                     <i class="fa-solid fa-atom text-slate-600 text-5xl mb-3 animate-spin"></i>
                     <p class="text-sm font-bold text-slate-200">No chapters found matching your query.</p>
-                    <p class="text-xs text-slate-400 mt-1">Try keywords like 'Motion', 'Cell', 'Tissue', 'Atom', 'Force' or 'Sound'</p>
                     <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs transition">
                         Show All Chapters
                     </button>
@@ -304,12 +313,10 @@
 
         <div id="chapterModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-3 sm:p-4">
             <div class="glass-panel bg-slate-900/95 rounded-2xl sm:rounded-3xl max-w-xl w-full max-h-[92dvh] p-5 sm:p-6 border border-white/15 shadow-2xl relative flex flex-col">
-                <!-- Modal Header -->
                 <div class="flex items-start justify-between pb-3.5 border-b border-slate-700/80 mb-3 flex-shrink-0">
                     <div class="min-w-0 pr-3">
                         <div class="flex items-center gap-2 mb-1 flex-wrap">
                             <span id="modalSubjectTag" class="text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase inline-block"></span>
-                            <span id="modalSlugTag" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-cyan-500/30"></span>
                         </div>
                         <h3 id="modalChapterTitle" class="text-lg sm:text-xl font-bold font-heading text-white leading-snug"></h3>
                         <p id="modalHindiTitle" class="text-xs text-slate-400 mt-0.5 font-medium"></p>
@@ -319,7 +326,6 @@
                     </button>
                 </div>
                 
-                <!-- Modal Body -->
                 <div class="space-y-3.5 text-xs text-slate-300 py-1 overflow-y-auto custom-scroll flex-1 pr-1">
                     <p id="modalChapterDesc" class="leading-relaxed text-slate-200"></p>
                     
@@ -332,29 +338,21 @@
                         </div>
                         <ul id="modalSubtopics" class="list-disc list-inside space-y-1.5 text-slate-300 text-[11px] leading-relaxed"></ul>
                     </div>
-
-                    <!-- Direct URL Box inside Modal -->
-                    <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700 text-[11px] flex items-center justify-between gap-2">
-                        <span class="font-mono text-slate-300 truncate" id="modalUrlDisplay"></span>
-                        <button onclick="copyModalLink()" class="px-2.5 py-1 rounded bg-slate-700 hover:bg-slate-600 text-cyan-300 text-[10px] font-bold flex-shrink-0 transition flex items-center gap-1">
-                            <i class="fa-solid fa-copy"></i> Copy
-                        </button>
-                    </div>
                 </div>
 
-                <!-- Modal Actions -->
                 <div class="pt-4 border-t border-slate-700/80 flex flex-wrap items-center justify-between gap-2 mt-2 flex-shrink-0">
                     <a id="modalDirectChapterBtn" href="#" target="_blank" rel="noopener noreferrer"
                        class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-black text-xs flex items-center gap-2 transition shadow-lg shadow-cyan-500/20 flex-1 sm:flex-initial justify-center">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Chapter Page
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Notes
+                    </a>
+                    <a id="modalExerciseBtnModal" href="#" target="_blank" rel="noopener noreferrer"
+                       class="px-3.5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs flex items-center gap-1.5 transition flex-1 sm:flex-initial justify-center shadow-sm">
+                        <i class="fa-solid fa-pen-to-square"></i> Exercise Solutions
                     </a>
                     <a id="modalNcertBtn" href="#" target="_blank" rel="noopener noreferrer" 
                        class="px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs flex items-center gap-1.5 transition flex-1 sm:flex-initial justify-center border border-white/10">
                         <i class="fa-solid fa-file-pdf text-rose-400"></i> NCERT PDF
                     </a>
-                    <button onclick="closeChapterModal()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition">
-                        Close
-                    </button>
                 </div>
             </div>
         </div>
@@ -365,15 +363,11 @@
         </div>
 
         <footer class="mt-8 sm:mt-12 border-t border-slate-800 bg-slate-950/90 backdrop-blur-md relative z-10 w-full">
-            <div class="max-w-6xl mx-auto px-3 sm:px-6 py-6 sm:py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
                 <div class="bg-slate-900/90 rounded-2xl p-4 sm:p-6 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-5">
-                    
-                    <!-- Teacher Identity Callout -->
                     <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-3 sm:gap-4 w-full md:w-auto">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-indigo-500 p-0.5 shadow-lg shadow-cyan-500/20 flex-shrink-0">
-                            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-cyan-400 text-xl sm:text-2xl font-black">
-                               <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZvYhIlN0l4Fvy7yrZGQAu_LOseGvgMhD-L10y7Czc9wbLd0SJ9scKlYSpz6IgIldwnqHVC-GT9mLGAJr9xpc1h-6iMafKuKQ2qG_Z1PUPp_yUGI7PK8VRrSLGS-L_6XNyURIVtHD9jpASFc0zYk7PuM5m4OZEkoJ9yKg4gZcS-2ZoPrzPHYN4N5W2CUw0/s1600/Pratap%20Sanjay%20Kumar.png">
-                            </div>
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-tr from-cyan-400 via-sky-500 to-indigo-500 p-0.5 shadow-lg shadow-cyan-500/20 flex-shrink-0 overflow-hidden flex items-center justify-center bg-slate-950">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZvYhIlN0l4Fvy7yrZGQAu_LOseGvgMhD-L10y7Czc9wbLd0SJ9scKlYSpz6IgIldwnqHVC-GT9mLGAJr9xpc1h-6iMafKuKQ2qG_Z1PUPp_yUGI7PK8VRrSLGS-L_6XNyURIVtHD9jpASFc0zYk7PuM5m4OZEkoJ9yKg4gZcS-2ZoPrzPHYN4N5W2CUw0/s1600/Pratap%20Sanjay%20Kumar.png" alt="Pratap Sanjay Sir" class="w-full h-full object-cover">
                         </div>
                         <div>
                             <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
@@ -385,12 +379,10 @@
                                 </span>
                             </div>
                             <p class="text-xs text-slate-300 mt-1">
-                                CBSE Class 9 Science Digital Portal • Complete Notes, Direct Chapters & Concept Mastery
+                                CBSE Class 9 Science Exploration • Complete Notes, Solutions & Concept Mastery
                             </p>
                         </div>
                     </div>
-
-                    <!-- Teacher's Quote Card -->
                     <div class="w-full md:max-w-md bg-slate-950/80 px-4 py-3 rounded-xl border border-slate-800 text-xs text-slate-200 italic text-center md:text-left">
                         "Do not just memorize science; explore and observe the laws of nature around you. Consistent practice is the key to excellence." <span class="block text-[10px] text-slate-400 not-italic mt-1">(सफलता निरंतर अभ्यास से ही संभव है)</span>
                     </div>
@@ -401,196 +393,194 @@
     </div>
 
     <script>
-        // Base Website URL for Chapter Pages
         const BASE_WEBSITE_URL = "https://pratapsanjaykumar.github.io/science_9th";
 
-        // 13 Science Chapters Data with explicit PHY, CHE, BIO, ENV subject labels and dedicated chapter_X slugs
+        // 13 Science Chapters Data with chapter_X notes, ch_X exercises, and iesc101.pdf to iesc113.pdf for NCERT PDFs
         const allChapters = [
             {
                 id: 1,
                 slug: "chapter_1",
+                exerciseSlug: "ch_1",
                 chapterNo: "Chapter 1",
                 title: "Exploration: Entering the World of Secondary Science",
                 hindiTitle: "(अन्वेषण: माध्यमिक विज्ञान की दुनिया में प्रवेश)",
                 subjectCode: "ENV",
                 subjectLabel: "FOUNDATION / EARTH",
                 subjectBadgeClass: "bg-amber-950/70 text-amber-300 border-amber-500/40",
-                badgeGlow: "rgba(217, 119, 6, 0.4)",
-                link: "https://ncert.nic.in/textbook/pdf/iesc101.pdf",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc101.pdf",
                 desc: "Introduction to scientific thinking, inquiry methods, laboratory measurements, SI standard units, and the philosophy of exploration.",
                 subtopics: ["Scientific Method & Models", "Standard SI Base Units", "Measurement Accuracy & Errors", "Laboratory Safety Norms"]
             },
             {
                 id: 2,
                 slug: "chapter_2",
+                exerciseSlug: "ch_2",
                 chapterNo: "Chapter 2",
                 title: "Cell: The Fundamental Unit of Life",
                 hindiTitle: "(कोशिका: जीवन की मूलभूत इकाई)",
                 subjectCode: "BIO",
                 subjectLabel: "BIOLOGY",
                 subjectBadgeClass: "bg-emerald-950/70 text-emerald-300 border-emerald-500/40",
-                badgeGlow: "rgba(5, 150, 105, 0.4)",
-                link: "https://ncert.nic.in/textbook/pdf/iesc102.pdf",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc102.pdf",
                 desc: "Microscopy, cellular anatomy, prokaryotes vs eukaryotes, cell membrane transport (osmosis/diffusion), and organelle functions.",
                 subtopics: ["Microscopy & Resolution", "Cell Membrane & Cell Wall", "Mitochondria, Golgi, Plastids, Lysosomes", "Osmosis (Hypotonic vs Hypertonic)"]
             },
             {
                 id: 3,
                 slug: "chapter_3",
+                exerciseSlug: "ch_3",
                 chapterNo: "Chapter 3",
                 title: "Tissues in Action",
                 hindiTitle: "(ऊतक: पादप एवं जंतु ऊतक)",
                 subjectCode: "BIO",
                 subjectLabel: "BIOLOGY",
                 subjectBadgeClass: "bg-emerald-950/70 text-emerald-300 border-emerald-500/40",
-                badgeGlow: "rgba(5, 150, 105, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc103.pdf",
                 desc: "Plant meristematic and permanent tissues, vascular bundles (xylem/phloem), and animal epithelial, connective, muscular, and nervous tissues.",
                 subtopics: ["Meristematic (Apical, Lateral, Intercalary)", "Complex Permanent: Xylem & Phloem", "Animal Connective & Epithelial Tissues", "Neuron Structure & Action"]
             },
             {
                 id: 4,
                 slug: "chapter_4",
+                exerciseSlug: "ch_4",
                 chapterNo: "Chapter 4",
                 title: "Describing Motion Around Us",
                 hindiTitle: "(गति: गति के नियम व समीकरण)",
                 subjectCode: "PHY",
                 subjectLabel: "PHYSICS",
                 subjectBadgeClass: "bg-sky-950/70 text-sky-300 border-sky-500/40",
-                badgeGlow: "rgba(2, 132, 199, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc104.pdf",
                 desc: "Distance vs displacement, uniform velocity, acceleration, motion graphs interpretation, and derivation of three kinematic equations.",
                 subtopics: ["Distance vs Displacement", "Uniform vs Non-uniform Motion", "Equations of Motion (v=u+at, s=ut+½at², v²=u²+2as)", "Distance-Time & v-t Graphs"]
             },
             {
                 id: 5,
                 slug: "chapter_5",
+                exerciseSlug: "ch_5",
                 chapterNo: "Chapter 5",
                 title: "Exploring Mixtures and Their Separation",
                 hindiTitle: "(मिश्रण और उनका पृथक्करण)",
                 subjectCode: "CHE",
                 subjectLabel: "CHEMISTRY",
                 subjectBadgeClass: "bg-rose-950/70 text-rose-300 border-rose-500/40",
-                badgeGlow: "rgba(225, 29, 72, 0.4)",
-                link: "https://ncert.nic.in/textbook/pdf/iesc105.pdf",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc105.pdf",
                 desc: "Homogeneous vs heterogeneous mixtures, solutions, colloids, Tyndall effect, solubility, concentration calculations, and separation techniques.",
                 subtopics: ["Homogeneous vs Heterogeneous", "Solutions, Colloids & Tyndall Effect", "Concentration & Mass Percentage Formula", "Distillation & Chromatography"]
             },
             {
                 id: 6,
                 slug: "chapter_6",
+                exerciseSlug: "ch_6",
                 chapterNo: "Chapter 6",
                 title: "How Forces Affect Motion",
                 hindiTitle: "(बल तथा गति के नियम)",
                 subjectCode: "PHY",
                 subjectLabel: "PHYSICS",
                 subjectBadgeClass: "bg-sky-950/70 text-sky-300 border-sky-500/40",
-                badgeGlow: "rgba(2, 132, 199, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc106.pdf",
                 desc: "Newton's laws of motion, inertia, momentum (p=mv), action-reaction force pairs, and law of conservation of momentum.",
                 subtopics: ["First Law: Mass & Inertia", "Second Law: F = m·a & Momentum", "Third Law: Action-Reaction Pairs", "Conservation of Momentum Derivations"]
             },
             {
                 id: 7,
                 slug: "chapter_7",
+                exerciseSlug: "ch_7",
                 chapterNo: "Chapter 7",
                 title: "Work, Energy, and Simple Machines",
                 hindiTitle: "(कार्य, ऊर्जा तथा सरल मशीनें)",
                 subjectCode: "PHY",
                 subjectLabel: "PHYSICS",
                 subjectBadgeClass: "bg-sky-950/70 text-sky-300 border-sky-500/40",
-                badgeGlow: "rgba(2, 132, 199, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc107.pdf",
                 desc: "Scientific work definition, kinetic and potential mechanical energies, power in Watts, commercial energy unit (kWh), and simple machines.",
                 subtopics: ["Scientific Work (W = F · s)", "Kinetic (½mv²) & Potential (mgh) Energy", "Law of Conservation of Energy", "Commercial Unit (1 kWh = 3.6 × 10⁶ J)"]
             },
             {
                 id: 8,
                 slug: "chapter_8",
+                exerciseSlug: "ch_8",
                 chapterNo: "Chapter 8",
                 title: "Journey Inside the Atom",
                 hindiTitle: "(परमाणु की संरचना)",
                 subjectCode: "CHE",
                 subjectLabel: "CHEMISTRY",
                 subjectBadgeClass: "bg-rose-950/70 text-rose-300 border-rose-500/40",
-                badgeGlow: "rgba(225, 29, 72, 0.4)",
-                link: "https://ncert.nic.in/textbook/pdf/iesc108.pdf",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc108.pdf",
                 desc: "Discovery of electrons, protons, and neutrons; Thomson's, Rutherford's, and Bohr's models of the atom.",
                 subtopics: ["Cathode & Canal Rays", "Thomson's Plum Pudding Model", "Rutherford's Gold Foil α-Scattering", "Bohr's Shells (K, L, M, N) & Neutrons"]
             },
             {
                 id: 9,
                 slug: "chapter_9",
+                exerciseSlug: "ch_9",
                 chapterNo: "Chapter 9",
                 title: "Atomic Foundations of Matter",
                 hindiTitle: "(परमाणु एवं अणु)",
                 subjectCode: "CHE",
                 subjectLabel: "CHEMISTRY",
                 subjectBadgeClass: "bg-rose-950/70 text-rose-300 border-rose-500/40",
-                badgeGlow: "rgba(225, 29, 72, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc109.pdf",
                 desc: "Laws of chemical combination, Dalton's atomic theory, valency criss-cross rules, molecular mass, and mole concept numericals.",
                 subtopics: ["Law of Chemical Combination", "Dalton's Atomic Postulates", "Valency Criss-Cross Formulas", "Mole Concept & Avogadro Number"]
             },
             {
                 id: 10,
                 slug: "chapter_10",
+                exerciseSlug: "ch_10",
                 chapterNo: "Chapter 10",
                 title: "Sound Waves: Characteristics and Applications",
                 hindiTitle: "(ध्वनि: तरंगें एवं अनुप्रयोग)",
                 subjectCode: "PHY",
                 subjectLabel: "PHYSICS",
                 subjectBadgeClass: "bg-sky-950/70 text-sky-300 border-sky-500/40",
-                badgeGlow: "rgba(2, 132, 199, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc110.pdf",
                 desc: "Wave propagation in media, compressions and rarefactions, frequency, wavelength, echo calculations, SONAR ultrasound, and human ear anatomy.",
                 subtopics: ["Longitudinal Sound Waves", "Frequency, Wavelength & Speed (v = νλ)", "Echo Minimum Distance (17.2 m)", "Ultrasound, SONAR & Human Ear"]
             },
             {
                 id: 11,
                 slug: "chapter_11",
+                exerciseSlug: "ch_11",
                 chapterNo: "Chapter 11",
                 title: "Reproduction: How Life Continues",
                 hindiTitle: "(जीवों में जनन)",
                 subjectCode: "BIO",
                 subjectLabel: "BIOLOGY",
                 subjectBadgeClass: "bg-emerald-950/70 text-emerald-300 border-emerald-500/40",
-                badgeGlow: "rgba(5, 150, 105, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc111.pdf",
                 desc: "Asexual reproduction (fission, budding, spores), sexual reproduction in angiosperm flowers, pollination, fertilization, and life continuity.",
                 subtopics: ["Asexual Modes: Fission, Budding", "Flower Anatomy (Stamen & Carpel)", "Pollination & Fertilization", "Reproductive Health Basics"]
             },
             {
                 id: 12,
                 slug: "chapter_12",
+                exerciseSlug: "ch_12",
                 chapterNo: "Chapter 12",
                 title: "Patterns in Life: Diversity and Classification",
                 hindiTitle: "(जीवों में विविधता एवं वर्गीकरण)",
                 subjectCode: "BIO",
                 subjectLabel: "BIOLOGY",
                 subjectBadgeClass: "bg-emerald-950/70 text-emerald-300 border-emerald-500/40",
-                badgeGlow: "rgba(5, 150, 105, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc112.pdf",
                 desc: "Taxonomic hierarchy, Whittaker's Five Kingdom Classification, plant divisions, animal phyla overview, and Linnaean binomial nomenclature.",
                 subtopics: ["Taxonomic Hierarchy", "Whittaker's 5 Kingdoms", "Plant Divisions & Animal Phyla", "Rules of Binomial Nomenclature"]
             },
             {
                 id: 13,
                 slug: "chapter_13",
+                exerciseSlug: "ch_13",
                 chapterNo: "Chapter 13",
                 title: "Earth as a System: Energy, Matter, and Life",
                 hindiTitle: "(एक प्रणाली के रूप में पृथ्वी)",
                 subjectCode: "ENV",
                 subjectLabel: "EARTH / ENV",
                 subjectBadgeClass: "bg-amber-950/70 text-amber-300 border-amber-500/40",
-                badgeGlow: "rgba(217, 119, 6, 0.4)",
-                link: "https://ncert.nic.in/textbook.php",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iesc113.pdf",
                 desc: "Earth's spheres, biogeochemical cycles (Nitrogen, Carbon, Water), atmospheric balances, greenhouse effect, and ozone layer sustainability.",
                 subtopics: ["Atmosphere, Hydrosphere & Lithosphere", "Nitrogen, Carbon & Water Cycles", "Greenhouse Effect & Global Warming", "Ozone Layer Preservation"]
             }
         ];
 
-        // State Management
         let selectedSubject = 'all';
         let searchQuery = '';
         let completedChapters = new Set();
@@ -606,65 +596,43 @@
             const particleCount = Math.min(Math.floor((width * height) / 18000), 75);
 
             class Particle {
-                constructor() {
-                    this.reset();
-                }
+                constructor() { this.reset(); }
                 reset() {
-                    this.x = Math.random() * width;
-                    this.y = Math.random() * height;
-                    this.vx = (Math.random() - 0.5) * 0.6;
-                    this.vy = (Math.random() - 0.5) * 0.6;
+                    this.x = Math.random() * width; this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.6; this.vy = (Math.random() - 0.5) * 0.6;
                     this.radius = Math.random() * 2.2 + 1;
                     const colors = ['#38bdf8', '#818cf8', '#34d399', '#f43f5e', '#fbbf24'];
                     this.color = colors[Math.floor(Math.random() * colors.length)];
                 }
                 update() {
-                    this.x += this.vx;
-                    this.y += this.vy;
+                    this.x += this.vx; this.y += this.vy;
                     if (this.x < 0 || this.x > width) this.vx *= -1;
                     if (this.y < 0 || this.y > height) this.vy *= -1;
                 }
                 draw() {
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                    ctx.fillStyle = this.color;
-                    ctx.shadowBlur = 10;
-                    ctx.shadowColor = this.color;
-                    ctx.fill();
-                    ctx.shadowBlur = 0;
+                    ctx.beginPath(); ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = this.color; ctx.shadowBlur = 10; ctx.shadowColor = this.color;
+                    ctx.fill(); ctx.shadowBlur = 0;
                 }
             }
 
-            for (let i = 0; i < particleCount; i++) {
-                particles.push(new Particle());
-            }
+            for (let i = 0; i < particleCount; i++) { particles.push(new Particle()); }
 
             function animate() {
                 ctx.clearRect(0, 0, width, height);
-
-                // Draw connecting lines between particles
                 for (let i = 0; i < particles.length; i++) {
                     for (let j = i + 1; j < particles.length; j++) {
                         const dx = particles[i].x - particles[j].x;
                         const dy = particles[i].y - particles[j].y;
                         const dist = Math.sqrt(dx * dx + dy * dy);
-
                         if (dist < 130) {
-                            ctx.beginPath();
-                            ctx.moveTo(particles[i].x, particles[i].y);
-                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y);
                             ctx.strokeStyle = `rgba(56, 189, 248, ${0.18 * (1 - dist / 130)})`;
-                            ctx.lineWidth = 0.8;
-                            ctx.stroke();
+                            ctx.lineWidth = 0.8; ctx.stroke();
                         }
                     }
                 }
-
-                particles.forEach(p => {
-                    p.update();
-                    p.draw();
-                });
-
+                particles.forEach(p => { p.update(); p.draw(); });
                 requestAnimationFrame(animate);
             }
 
@@ -674,34 +642,6 @@
             });
 
             animate();
-        }
-
-        function renderSandboxSlugs() {
-            const container = document.getElementById('chapterSlugSandbox');
-            container.innerHTML = '';
-
-            allChapters.forEach(ch => {
-                const fullUrl = `${BASE_WEBSITE_URL}/${ch.slug}`;
-                const btn = document.createElement('a');
-                btn.href = fullUrl;
-                btn.target = "_blank";
-                btn.rel = "noopener noreferrer";
-                btn.className = "quick-slug-btn flex-shrink-0 px-3 py-1.5 rounded-xl text-xs font-mono font-bold text-slate-200 flex items-center gap-1.5 shadow-sm";
-                btn.title = `Open ${ch.title}`;
-
-                // Subject dot color
-                let dotColor = 'bg-sky-400';
-                if (ch.subjectCode === 'CHE') dotColor = 'bg-rose-400';
-                if (ch.subjectCode === 'BIO') dotColor = 'bg-emerald-400';
-                if (ch.subjectCode === 'ENV') dotColor = 'bg-amber-400';
-
-                btn.innerHTML = `
-                    <span class="w-1.5 h-1.5 rounded-full ${dotColor}"></span>
-                    <span>${ch.slug}</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-70 ml-0.5"></i>
-                `;
-                container.appendChild(btn);
-            });
         }
 
         function renderChapters() {
@@ -716,6 +656,7 @@
                     ch.title.toLowerCase().includes(searchQuery) ||
                     ch.hindiTitle.toLowerCase().includes(searchQuery) ||
                     ch.slug.toLowerCase().includes(searchQuery) ||
+                    ch.exerciseSlug.toLowerCase().includes(searchQuery) ||
                     ch.chapterNo.toLowerCase().includes(searchQuery) ||
                     ch.subtopics.some(sub => sub.toLowerCase().includes(searchQuery))
                 );
@@ -733,40 +674,28 @@
 
             filtered.forEach((ch) => {
                 const isCompleted = completedChapters.has(ch.id);
-                const chapterDirectUrl = `${BASE_WEBSITE_URL}/${ch.slug}`;
+                const notesUrl = `${BASE_WEBSITE_URL}/${ch.slug}`;
+                const exerciseUrl = `${BASE_WEBSITE_URL}/${ch.exerciseSlug}`;
 
                 const item = document.createElement('div');
                 item.className = `chapter-card-item p-4 sm:p-5 rounded-2xl flex flex-col lg:flex-row lg:items-center justify-between gap-4 border ${isCompleted ? 'border-emerald-500/40 bg-emerald-950/15' : ''}`;
 
                 item.innerHTML = `
-                    <!-- Left: Subject Identifier & 20px English Chapter Title -->
                     <div class="flex items-start gap-3.5 sm:gap-4 min-w-0">
-                        <!-- Prominent Front Subject Badge -->
                         <div class="flex-shrink-0 flex flex-col items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-2xl border ${ch.subjectBadgeClass} font-black text-center shadow-lg transition-transform hover:scale-105">
                             <span class="text-xs sm:text-sm font-extrabold tracking-tight">${ch.subjectCode}</span>
                             <span class="text-[9px] uppercase font-bold opacity-80">${ch.chapterNo.replace("Chapter ", "Ch ")}</span>
                         </div>
 
-                        <!-- Chapter Title, Hindi Title & Metadata -->
                         <div class="min-w-0 flex-1">
                             <div class="flex items-center gap-2 mb-1 flex-wrap">
                                 <span class="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-full border ${ch.subjectBadgeClass}">
                                     ${ch.subjectLabel}
                                 </span>
-                                <!-- Small-Font Hindi Title in Brackets -->
                                 <span class="text-[11px] sm:text-xs text-slate-400 font-semibold tracking-wide">${ch.hindiTitle}</span>
-                                
-                                <!-- Direct Slug Badge -->
-                                <a href="${chapterDirectUrl}" target="_blank" rel="noopener noreferrer" 
-                                   class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-950 text-cyan-300 border border-cyan-500/30 hover:border-cyan-400 transition" 
-                                   title="Open direct page: ${ch.slug}">
-                                    /${ch.slug}
-                                </a>
-
                                 ${isCompleted ? '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/40"><i class="fa-solid fa-check mr-1"></i>Completed</span>' : ''}
                             </div>
 
-                            <!-- 20px Prominent English Title -->
                             <h2 class="chapter-title-en font-bold text-white hover:text-cyan-400 transition cursor-pointer leading-snug tracking-tight" 
                                 onclick="openChapterDetails(${ch.id})">
                                 ${ch.title}
@@ -778,33 +707,24 @@
                         </div>
                     </div>
 
-                    <!-- Right Action Row: Direct chapter_X page, Quick view, and NCERT PDF -->
                     <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap flex-shrink-0 self-stretch lg:self-center pt-2 lg:pt-0">
-                        <!-- Direct Chapter Page Button -->
-                        <a href="${chapterDirectUrl}" target="_blank" rel="noopener noreferrer"
+                        <a href="${notesUrl}" target="_blank" rel="noopener noreferrer"
                            class="flex-1 sm:flex-initial px-3.5 py-2 rounded-xl text-xs font-black bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white transition flex items-center justify-center gap-1.5 shadow-md shadow-cyan-500/25">
-                            <i class="fa-solid fa-compass text-xs"></i>
-                            <span>${ch.slug}</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-80"></i>
+                            <i class="fa-solid fa-book-open text-xs"></i> Notes
                         </a>
 
-                        <!-- Quick View Modal Button -->
-                        <button onclick="openChapterDetails(${ch.id})" 
-                                class="flex-1 sm:flex-initial px-3 py-2 rounded-xl text-xs font-semibold text-slate-200 bg-slate-800/90 hover:bg-slate-700 hover:text-white transition flex items-center justify-center gap-1 border border-white/10">
-                            <i class="fa-solid fa-eye text-cyan-400 mr-0.5"></i> Quick View
-                        </button>
-
-                        <!-- NCERT Official PDF Link -->
-                        <a href="${ch.link}" target="_blank" rel="noopener noreferrer" 
-                           class="flex-1 sm:flex-initial px-3 py-2 rounded-xl text-xs font-bold bg-slate-800/80 hover:bg-slate-700 text-slate-200 transition flex items-center justify-center gap-1.5 border border-white/10"
-                           title="Read Official NCERT PDF">
-                            <i class="fa-solid fa-file-pdf text-rose-400"></i>
-                            <span class="hidden sm:inline">NCERT</span>
+                        <a href="${exerciseUrl}" target="_blank" rel="noopener noreferrer"
+                           class="flex-1 sm:flex-initial px-3.5 py-2 rounded-xl text-xs font-bold bg-amber-600 hover:bg-amber-500 text-white transition flex items-center justify-center gap-1.5 shadow-md shadow-amber-500/20">
+                            <i class="fa-solid fa-pen-to-square text-xs"></i> Exercise
                         </a>
 
-                        <!-- Mark as Done Toggle -->
+                        <a href="${ch.pdfUrl}" target="_blank" rel="noopener noreferrer" 
+                           class="flex-1 sm:flex-initial px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 transition flex items-center justify-center gap-1.5 border border-white/10">
+                            <i class="fa-solid fa-file-pdf text-rose-400"></i> NCERT PDF
+                        </a>
+
                         <button onclick="toggleCompleted(${ch.id})" 
-                                title="${isCompleted ? 'Mark as Incomplete' : 'Mark Chapter Completed'}"
+                                title="${isCompleted ? 'Mark as Incomplete' : 'Mark Completed'}"
                                 class="p-2 rounded-xl border ${isCompleted ? 'bg-emerald-600/30 text-emerald-400 border-emerald-500/50' : 'bg-slate-800/60 text-slate-400 border-white/10 hover:text-white'} transition">
                             <i class="fa-solid ${isCompleted ? 'fa-square-check' : 'fa-check'} text-sm"></i>
                         </button>
@@ -817,7 +737,6 @@
             updateProgressDisplay();
         }
 
-        // Filter and Search Helpers
         function filterBySubject(subj) {
             selectedSubject = subj;
             document.querySelectorAll('.subject-filter-btn').forEach(btn => {
@@ -834,28 +753,21 @@
             const input = document.getElementById('chapterSearch');
             searchQuery = input.value.toLowerCase().trim();
             const clearBtn = document.getElementById('clearSearchBtn');
-            if (searchQuery.length > 0) {
-                clearBtn.classList.remove('hidden');
-            } else {
-                clearBtn.classList.add('hidden');
-            }
+            if (searchQuery.length > 0) { clearBtn.classList.remove('hidden'); } else { clearBtn.classList.add('hidden'); }
             renderChapters();
         }
 
         function clearSearch() {
             const input = document.getElementById('chapterSearch');
-            input.value = '';
-            searchQuery = '';
+            input.value = ''; searchQuery = '';
             document.getElementById('clearSearchBtn').classList.add('hidden');
             renderChapters();
         }
 
         function resetFilters() {
-            clearSearch();
-            filterBySubject('all');
+            clearSearch(); filterBySubject('all');
         }
 
-        // Progress Tracking (In-memory)
         function toggleCompleted(id) {
             if (completedChapters.has(id)) {
                 completedChapters.delete(id);
@@ -875,7 +787,11 @@
 
         function updateProgressDisplay() {
             const summary = document.getElementById('progressSummary');
-            summary.textContent = `${completedChapters.size} of ${allChapters.length} Completed`;
+            const count = completedChapters.size;
+            const percent = Math.round((count / allChapters.length) * 100);
+            summary.textContent = `${count} of ${allChapters.length} Completed`;
+            document.getElementById('progressPercent').textContent = `${percent}% Completed (${count}/13 Chapters)`;
+            document.getElementById('statProgressBar').style.width = `${percent}%`;
         }
 
         function openChapterDetails(id) {
@@ -883,78 +799,49 @@
             if (!ch) return;
             currentModalChapter = ch;
 
-            const directUrl = `${BASE_WEBSITE_URL}/${ch.slug}`;
+            const notesUrl = `${BASE_WEBSITE_URL}/${ch.slug}`;
+            const exerciseUrl = `${BASE_WEBSITE_URL}/${ch.exerciseSlug}`;
 
             const badge = document.getElementById('modalSubjectTag');
             badge.textContent = `${ch.subjectCode} • ${ch.chapterNo}`;
             badge.className = `text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase border ${ch.subjectBadgeClass}`;
 
-            document.getElementById('modalSlugTag').textContent = `/${ch.slug}`;
             document.getElementById('modalChapterTitle').textContent = ch.title;
             document.getElementById('modalHindiTitle').textContent = ch.hindiTitle;
             document.getElementById('modalChapterDesc').textContent = ch.desc;
-            document.getElementById('modalUrlDisplay').textContent = directUrl;
 
-            document.getElementById('modalDirectChapterBtn').href = directUrl;
-            document.getElementById('modalNcertBtn').href = ch.link;
+            document.getElementById('modalDirectChapterBtn').href = notesUrl;
+            document.getElementById('modalExerciseBtnModal').href = exerciseUrl;
+            document.getElementById('modalNcertBtn').href = ch.pdfUrl;
 
             const list = document.getElementById('modalSubtopics');
             list.innerHTML = ch.subtopics.map(sub => `<li>${sub}</li>`).join('');
 
             const modal = document.getElementById('chapterModal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            modal.classList.remove('hidden'); modal.classList.add('flex');
             document.body.style.overflow = 'hidden';
         }
 
         function closeChapterModal() {
             const modal = document.getElementById('chapterModal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.style.overflow = '';
-            currentModalChapter = null;
-        }
-
-        function copyModalLink() {
-            if (!currentModalChapter) return;
-            const link = `${BASE_WEBSITE_URL}/${currentModalChapter.slug}`;
-
-            const tempInput = document.createElement('input');
-            tempInput.value = link;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            try {
-                document.execCommand('copy');
-                showToast(`Copied: ${link}`);
-            } catch (err) {
-                console.error("Copy failed", err);
-            }
-            document.body.removeChild(tempInput);
+            modal.classList.add('hidden'); modal.classList.remove('flex');
+            document.body.style.overflow = ''; currentModalChapter = null;
         }
 
         function showToast(msg) {
             const toast = document.getElementById('toastNotification');
             const msgEl = document.getElementById('toastMessage');
             msgEl.textContent = msg;
-            toast.classList.remove('translate-y-20', 'opacity-0');
-            toast.classList.add('translate-y-0', 'opacity-100');
-
+            toast.classList.remove('translate-y-20', 'opacity-0'); toast.classList.add('translate-y-0', 'opacity-100');
             setTimeout(() => {
-                toast.classList.remove('translate-y-0', 'opacity-100');
-                toast.classList.add('translate-y-20', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100'); toast.classList.add('translate-y-20', 'opacity-0');
             }, 2500);
         }
 
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                closeChapterModal();
-            }
-        });
+        window.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeChapterModal(); } });
 
-        // Initialize when window finishes loading
         window.onload = function () {
             initLiveBackground();
-            renderSandboxSlugs();
             renderChapters();
         };
     </script>
